@@ -1,0 +1,140 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url(11.jpg) ;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    color: #0f0000;
+    word-spacing: 1px;
+    font-size: 18px;
+  }
+  
+  /* Header styles */
+  header {
+    
+    color: #fff;
+    padding: 10px;
+  }
+  
+  h1{
+    text-align: center;
+  }
+
+h1{
+    animation-name: heading;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes heading {
+    0%   {color: red;}
+    25%  {color: yellow;}
+    50%  {color: rgb(190, 16, 138);}
+    100% {color: hsl(120, 78%, 65%);}
+  }
+
+h2:hover{
+    color: #f00670;
+}
+
+  
+  .cta {
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .cta:hover {
+    background-color: #ddd;
+  }
+  
+  /* Main styles */
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  article {
+    flex-basis: calc(50% - 20px);
+    margin-bottom: 40px;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  h2 {
+    margin: 10px 0;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  .button {
+    background-color: rgb(196, 226, 245);
+    color: #d70888;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: double;
+    transition: background-color 0.2s ease;
+  }
+  
+  .button:hover {
+    background-color: hsl(319, 87%, 53%);
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* unvisited link */
+a:link {
+    color: hsl(0, 100%, 50%);
+  }
+  
+  /* visited link */
+  a:visited {
+    color: hsl(333, 87%, 52%);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #0d9508;
+  }
+  
+  /* selected link */
+  a:active {
+    color: #0000FF;
+  }
+
+  a{
+    font-weight: bold;
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+    transition: width 2s, height 2s, transform 2s;
+  }
+  
+  img:hover {
+    width: 150px;
+    height: 150px;
+    transform: rotate(360deg);
+  }
